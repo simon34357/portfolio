@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen responsive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+
+    <header>
+        <img src="../fulscreen-responsive/img/image-2.jpg" class="banner">
+        <a href="" class="logo">Defiweb.</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i>Accueil</a></li>
+                <li><a href="#"><i class="fas fa-user-alt"></i>A propos</a></li>
+                <li><a href="../galerie-animation/index.html"><i class="fas fa-grin-beam"></i>Animation</a></li>
+                <li><a href="../loader/index.html"><i class="fas fa-spinner"></i>Loader</a></li>
+                <li><a href="../mes-sites/index.html"><i class="fas fa-desktop"></i>Sites</a></li>
+                <li><a href="../contact/index.html"><i class="fas fa-phone"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div>
+                <h1>Chantier Défiweb</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet quas repellat optio obcaecati similique cum culpa magni ratione nesciunt quos tempora soluta minus rerum temporibus, vel pariatur sint dolore libero autem velit.<br>                    Atque, earum dolor, cumque repellat autem esse ipsa quasi fugit itaque corporis fuga qui laborum neque iusto consectetur odio cupiditate suscipit magnam! Ea, architecto beatae doloremque suscipit exercitationem totam! Earum modi sint
+                    iste cupiditate ullam eaque id veniam. Consectetur alias assumenda repellat sapiente exercitationem consequatur sequi odit reiciendis? Dolorum necessitatibus totam rem ex nulla, perspiciatis blanditiis quisquam, beatae quibusdam nihil
+                    atque, deserunt assumenda sit unde! Hic, eum!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae adipisci sunt, similique nulla quasi cumque nostrum cupiditate deleniti nihil ea dolor reiciendis autem esse, quas debitis expedita dicta. Aut tenetur velit sed commodi,
+                    eum, esse molestias cum iste ratione magnam tempora iusto, a accusantium molestiae dolorem impedit itaque enim ipsum culpa doloribus. Tenetur quia quos, hic esse vitae unde quis cumque quasi iure laboriosam iusto aperiam iste vel est?
+                    Amet animi reprehenderit, error quae totam qui eaque corporis rerum ullam. Cum, quo voluptas! Saepe, ex? Quis totam blanditiis consequatur enim voluptate sed, commodi temporibus? Fuga nisi doloribus accusamus aut ullam.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function() {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <script src="loader.js"></script>
+</body>
+
+</html>

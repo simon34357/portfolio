@@ -1,0 +1,27 @@
+.mt-5 {
+    display: flex;
+    justify-content: center;
+    background: url("sol.jpg");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+#interfaceMeteo {
+    display: none;
+}
+
+#interfaceMeteo {
+    box-shadow: 5px 5px 10px grey;
+    padding: 100px;
+    border-radius: 15px 15px;
+}
+
+#triangle-code {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 40px solid rgba(251, 251, 251, 0.637);
+}

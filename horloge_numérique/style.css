@@ -1,0 +1,107 @@
+/* RESET */
+
+@font-face {
+    font-family: "DSdigital";
+    src: url("DS-DIGI.TTF");
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.2)0%, rgba(10, 10, 10, 0.2)100%), url('img/background.jpg');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horloge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.heures {
+    padding: 20px 20%;
+    box-shadow: 0 0 25px #fff;
+    width: 400px;
+    font-size: 70px;
+    border-radius: 15px;
+    font-family: "DSdigital";
+    background: rgb(0, 0, 0);
+    transition: all ease 0.3s;
+    opacity: 0.7;
+}
+
+.heures:hover {
+    background: rgb(243, 255, 255);
+    color: cyan;
+    box-shadow: 0 0 30px cyan;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 100px;
+}
+
+h1 {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    color: #fff;
+    font-size: 45px;
+    font-family: 'Nunito Sans', sans-serif;
+    opacity: 0.9;
+}
+
+@media screen and (max-width:768px) {
+    .heures {
+        width: 80%;
+        margin: 10px 30px;
+        font-size: 40px;
+        background: rgb(0, 0, 0);
+        border: solid 2px white;
+    }
+    h1 {
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        color: rgb(235, 235, 235);
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .heures {
+        width: 100%;
+        margin: 30px auto;
+        font-size: 0 20px;
+        background: rgb(0, 0, 0);
+    }
+    h1 {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        color: rgb(235, 235, 235);
+        font-weight: 800;
+    }
+    .date {
+        padding-top: 5px;
+        font-size: 25px;
+        font-family: 'Orbitron ', sans-serif;
+        padding-top: 100px;
+    }
+}
